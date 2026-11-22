@@ -1,0 +1,38 @@
+eck-elasticsearch:
+  enabled: true
+  fullnameOverride: elasticsearch
+  version: 9.5.0
+  nodeSets:
+    - name: default
+      count: 3
+      config:
+        node.store.allow_mmap: false
+      podTemplate:
+        spec:
+          containers:
+            - name: elasticsearch
+              resources:
+                requests:
+                  memory: 2Gi
+                  cpu: 500m
+                limits:
+                  memory: 2Gi
+      volumeClaimTemplates:
+        - metadata:
+            name: elasticsearch-data
+          spec:
+            accessModes:
+              - ReadWriteOnce
+            storageClassName: gp3
+            resources:
+              requests:
+                storage: 20Gi
+
+eck-kibana:
+  enabled: true
+  fullnameOverride: kibana
+  version: 9.5.0
+  spec:
+    count: 1
+    elasticsearchRef:
+      name: elasticsearch
