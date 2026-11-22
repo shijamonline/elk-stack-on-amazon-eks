@@ -1,0 +1,499 @@
+{
+  "took" : 7,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 313,
+      "relation" : "eq"
+    },
+    "max_score" : null,
+    "hits" : [
+      {
+        "_index" : ".ds-filebeat-9.5.0-2026.11.22-000001",
+        "_id" : "u7vuAqIBF8sCHOxqfjIz",
+        "_score" : null,
+        "_source" : {
+          "@timestamp" : "2026-11-22T11:05:10.136Z",
+          "agent" : {
+            "type" : "filebeat",
+            "version" : "9.5.0",
+            "ephemeral_id" : "5b198e31-e838-4d5a-be5c-841440310a73",
+            "id" : "9141cb03-ef58-4848-8da7-fc7f318d8e27",
+            "name" : "filebeat-beat-filebeat-xvv2b"
+          },
+          "container" : {
+            "id" : "5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa",
+            "runtime" : "containerd",
+            "image" : {
+              "name" : "docker.io/library/busybox:latest"
+            }
+          },
+          "stream" : "stdout",
+          "message" : "{\"level\":\"info\",\"msg\":\"order placed\",\"order_id\":312}",
+          "input" : {
+            "type" : "filestream"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "filebeat-beat-filebeat-xvv2b"
+          },
+          "kubernetes" : {
+            "replicaset" : {
+              "name" : "log-demo-5d4ddfd668"
+            },
+            "labels" : {
+              "topology_kubernetes_io/zone" : "ap-southeast-2a",
+              "app" : "log-demo",
+              "pod-template-hash" : "5d4ddfd668",
+              "topology_kubernetes_io/region" : "ap-southeast-2"
+            },
+            "container" : {
+              "name" : "busybox"
+            },
+            "node" : {
+              "name" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+              "uid" : "0c474847-110a-4023-9663-188baac9f1a3",
+              "labels" : {
+                "eks_amazonaws_com/nodegroup" : "workers",
+                "failure-domain_beta_kubernetes_io/region" : "ap-southeast-2",
+                "eks_amazonaws_com/sourceLaunchTemplateVersion" : "1",
+                "kubernetes_io/arch" : "amd64",
+                "topology_kubernetes_io/region" : "ap-southeast-2",
+                "alpha_eksctl_io/cluster-name" : "elk-lab",
+                "failure-domain_beta_kubernetes_io/zone" : "ap-southeast-2a",
+                "alpha_eksctl_io/nodegroup-name" : "workers",
+                "topology_ebs_csi_aws_com/zone" : "ap-southeast-2a",
+                "beta_kubernetes_io/os" : "linux",
+                "kubernetes_io/os" : "linux",
+                "eks_amazonaws_com/nodegroup-image" : "ami-0179eedff3fa8edad",
+                "kubernetes_io/hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+                "eks_amazonaws_com/sourceLaunchTemplateId" : "lt-08a432e70125087ac",
+                "beta_kubernetes_io/instance-type" : "m7i-flex.large",
+                "topology_kubernetes_io/zone" : "ap-southeast-2a",
+                "k8s_io/cloud-provider-aws" : "e54503c795a181127c6ebc8e9732dc5c",
+                "topology_k8s_aws/zone-id" : "apse2-az1",
+                "beta_kubernetes_io/arch" : "amd64",
+                "eks_amazonaws_com/capacityType" : "ON_DEMAND",
+                "node_kubernetes_io/instance-type" : "m7i-flex.large"
+              },
+              "hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal"
+            },
+            "pod" : {
+              "name" : "log-demo-5d4ddfd668-r22sw",
+              "uid" : "c0593212-528d-48e0-ba91-167219f3f840",
+              "ip" : "192.168.29.226"
+            },
+            "namespace" : "default",
+            "namespace_uid" : "11938df8-9492-4057-8ac9-91ad978c34d8",
+            "namespace_labels" : {
+              "kubernetes_io/metadata_name" : "default"
+            }
+          },
+          "log" : {
+            "file" : {
+              "inode" : "17012605",
+              "path" : "/var/log/containers/log-demo-5d4ddfd668-r22sw_default_busybox-5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa.log",
+              "device_id" : "66305"
+            },
+            "offset" : 28875
+          }
+        },
+        "sort" : [
+          1795345510136
+        ]
+      },
+      {
+        "_index" : ".ds-filebeat-9.5.0-2026.11.22-000001",
+        "_id" : "urvuAqIBF8sCHOxqfjIz",
+        "_score" : null,
+        "_source" : {
+          "@timestamp" : "2026-11-22T11:05:08.135Z",
+          "log" : {
+            "offset" : 28782,
+            "file" : {
+              "device_id" : "66305",
+              "inode" : "17012605",
+              "path" : "/var/log/containers/log-demo-5d4ddfd668-r22sw_default_busybox-5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa.log"
+            }
+          },
+          "stream" : "stdout",
+          "message" : "{\"level\":\"info\",\"msg\":\"order placed\",\"order_id\":311}",
+          "input" : {
+            "type" : "filestream"
+          },
+          "host" : {
+            "name" : "filebeat-beat-filebeat-xvv2b"
+          },
+          "container" : {
+            "image" : {
+              "name" : "docker.io/library/busybox:latest"
+            },
+            "id" : "5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa",
+            "runtime" : "containerd"
+          },
+          "kubernetes" : {
+            "namespace_labels" : {
+              "kubernetes_io/metadata_name" : "default"
+            },
+            "replicaset" : {
+              "name" : "log-demo-5d4ddfd668"
+            },
+            "labels" : {
+              "pod-template-hash" : "5d4ddfd668",
+              "topology_kubernetes_io/region" : "ap-southeast-2",
+              "topology_kubernetes_io/zone" : "ap-southeast-2a",
+              "app" : "log-demo"
+            },
+            "container" : {
+              "name" : "busybox"
+            },
+            "node" : {
+              "hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+              "name" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+              "uid" : "0c474847-110a-4023-9663-188baac9f1a3",
+              "labels" : {
+                "node_kubernetes_io/instance-type" : "m7i-flex.large",
+                "topology_kubernetes_io/region" : "ap-southeast-2",
+                "k8s_io/cloud-provider-aws" : "e54503c795a181127c6ebc8e9732dc5c",
+                "topology_k8s_aws/zone-id" : "apse2-az1",
+                "eks_amazonaws_com/nodegroup" : "workers",
+                "eks_amazonaws_com/sourceLaunchTemplateVersion" : "1",
+                "eks_amazonaws_com/capacityType" : "ON_DEMAND",
+                "beta_kubernetes_io/os" : "linux",
+                "alpha_eksctl_io/cluster-name" : "elk-lab",
+                "kubernetes_io/os" : "linux",
+                "beta_kubernetes_io/arch" : "amd64",
+                "kubernetes_io/hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+                "topology_ebs_csi_aws_com/zone" : "ap-southeast-2a",
+                "beta_kubernetes_io/instance-type" : "m7i-flex.large",
+                "eks_amazonaws_com/nodegroup-image" : "ami-0179eedff3fa8edad",
+                "failure-domain_beta_kubernetes_io/zone" : "ap-southeast-2a",
+                "kubernetes_io/arch" : "amd64",
+                "topology_kubernetes_io/zone" : "ap-southeast-2a",
+                "alpha_eksctl_io/nodegroup-name" : "workers",
+                "failure-domain_beta_kubernetes_io/region" : "ap-southeast-2",
+                "eks_amazonaws_com/sourceLaunchTemplateId" : "lt-08a432e70125087ac"
+              }
+            },
+            "pod" : {
+              "name" : "log-demo-5d4ddfd668-r22sw",
+              "uid" : "c0593212-528d-48e0-ba91-167219f3f840",
+              "ip" : "192.168.29.226"
+            },
+            "namespace" : "default",
+            "namespace_uid" : "11938df8-9492-4057-8ac9-91ad978c34d8"
+          },
+          "agent" : {
+            "version" : "9.5.0",
+            "ephemeral_id" : "5b198e31-e838-4d5a-be5c-841440310a73",
+            "id" : "9141cb03-ef58-4848-8da7-fc7f318d8e27",
+            "name" : "filebeat-beat-filebeat-xvv2b",
+            "type" : "filebeat"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          }
+        },
+        "sort" : [
+          1795345508135
+        ]
+      },
+      {
+        "_index" : ".ds-filebeat-9.5.0-2026.11.22-000001",
+        "_id" : "ubvuAqIBF8sCHOxqfjIz",
+        "_score" : null,
+        "_source" : {
+          "@timestamp" : "2026-11-22T11:05:06.134Z",
+          "stream" : "stdout",
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "filebeat-beat-filebeat-xvv2b"
+          },
+          "container" : {
+            "runtime" : "containerd",
+            "image" : {
+              "name" : "docker.io/library/busybox:latest"
+            },
+            "id" : "5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa"
+          },
+          "log" : {
+            "offset" : 28689,
+            "file" : {
+              "device_id" : "66305",
+              "inode" : "17012605",
+              "path" : "/var/log/containers/log-demo-5d4ddfd668-r22sw_default_busybox-5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa.log"
+            }
+          },
+          "message" : "{\"level\":\"info\",\"msg\":\"order placed\",\"order_id\":310}",
+          "input" : {
+            "type" : "filestream"
+          },
+          "agent" : {
+            "version" : "9.5.0",
+            "ephemeral_id" : "5b198e31-e838-4d5a-be5c-841440310a73",
+            "id" : "9141cb03-ef58-4848-8da7-fc7f318d8e27",
+            "name" : "filebeat-beat-filebeat-xvv2b",
+            "type" : "filebeat"
+          },
+          "kubernetes" : {
+            "namespace_uid" : "11938df8-9492-4057-8ac9-91ad978c34d8",
+            "namespace_labels" : {
+              "kubernetes_io/metadata_name" : "default"
+            },
+            "replicaset" : {
+              "name" : "log-demo-5d4ddfd668"
+            },
+            "labels" : {
+              "topology_kubernetes_io/zone" : "ap-southeast-2a",
+              "app" : "log-demo",
+              "pod-template-hash" : "5d4ddfd668",
+              "topology_kubernetes_io/region" : "ap-southeast-2"
+            },
+            "container" : {
+              "name" : "busybox"
+            },
+            "node" : {
+              "hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+              "name" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+              "uid" : "0c474847-110a-4023-9663-188baac9f1a3",
+              "labels" : {
+                "topology_ebs_csi_aws_com/zone" : "ap-southeast-2a",
+                "eks_amazonaws_com/capacityType" : "ON_DEMAND",
+                "topology_kubernetes_io/zone" : "ap-southeast-2a",
+                "failure-domain_beta_kubernetes_io/zone" : "ap-southeast-2a",
+                "eks_amazonaws_com/sourceLaunchTemplateVersion" : "1",
+                "kubernetes_io/arch" : "amd64",
+                "node_kubernetes_io/instance-type" : "m7i-flex.large",
+                "beta_kubernetes_io/os" : "linux",
+                "topology_k8s_aws/zone-id" : "apse2-az1",
+                "alpha_eksctl_io/cluster-name" : "elk-lab",
+                "eks_amazonaws_com/nodegroup" : "workers",
+                "k8s_io/cloud-provider-aws" : "e54503c795a181127c6ebc8e9732dc5c",
+                "eks_amazonaws_com/nodegroup-image" : "ami-0179eedff3fa8edad",
+                "eks_amazonaws_com/sourceLaunchTemplateId" : "lt-08a432e70125087ac",
+                "beta_kubernetes_io/instance-type" : "m7i-flex.large",
+                "topology_kubernetes_io/region" : "ap-southeast-2",
+                "kubernetes_io/os" : "linux",
+                "beta_kubernetes_io/arch" : "amd64",
+                "kubernetes_io/hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+                "alpha_eksctl_io/nodegroup-name" : "workers",
+                "failure-domain_beta_kubernetes_io/region" : "ap-southeast-2"
+              }
+            },
+            "pod" : {
+              "name" : "log-demo-5d4ddfd668-r22sw",
+              "uid" : "c0593212-528d-48e0-ba91-167219f3f840",
+              "ip" : "192.168.29.226"
+            },
+            "namespace" : "default"
+          }
+        },
+        "sort" : [
+          1795345506134
+        ]
+      },
+      {
+        "_index" : ".ds-filebeat-9.5.0-2026.11.22-000001",
+        "_id" : "uLvuAqIBF8sCHOxqfjIz",
+        "_score" : null,
+        "_source" : {
+          "@timestamp" : "2026-11-22T11:05:04.133Z",
+          "stream" : "stdout",
+          "container" : {
+            "runtime" : "containerd",
+            "image" : {
+              "name" : "docker.io/library/busybox:latest"
+            },
+            "id" : "5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa"
+          },
+          "kubernetes" : {
+            "namespace_labels" : {
+              "kubernetes_io/metadata_name" : "default"
+            },
+            "replicaset" : {
+              "name" : "log-demo-5d4ddfd668"
+            },
+            "labels" : {
+              "topology_kubernetes_io/zone" : "ap-southeast-2a",
+              "app" : "log-demo",
+              "pod-template-hash" : "5d4ddfd668",
+              "topology_kubernetes_io/region" : "ap-southeast-2"
+            },
+            "container" : {
+              "name" : "busybox"
+            },
+            "node" : {
+              "uid" : "0c474847-110a-4023-9663-188baac9f1a3",
+              "labels" : {
+                "kubernetes_io/arch" : "amd64",
+                "beta_kubernetes_io/instance-type" : "m7i-flex.large",
+                "topology_kubernetes_io/zone" : "ap-southeast-2a",
+                "topology_k8s_aws/zone-id" : "apse2-az1",
+                "alpha_eksctl_io/cluster-name" : "elk-lab",
+                "kubernetes_io/os" : "linux",
+                "kubernetes_io/hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+                "topology_ebs_csi_aws_com/zone" : "ap-southeast-2a",
+                "eks_amazonaws_com/capacityType" : "ON_DEMAND",
+                "failure-domain_beta_kubernetes_io/zone" : "ap-southeast-2a",
+                "eks_amazonaws_com/nodegroup" : "workers",
+                "failure-domain_beta_kubernetes_io/region" : "ap-southeast-2",
+                "eks_amazonaws_com/sourceLaunchTemplateId" : "lt-08a432e70125087ac",
+                "beta_kubernetes_io/os" : "linux",
+                "k8s_io/cloud-provider-aws" : "e54503c795a181127c6ebc8e9732dc5c",
+                "beta_kubernetes_io/arch" : "amd64",
+                "eks_amazonaws_com/nodegroup-image" : "ami-0179eedff3fa8edad",
+                "alpha_eksctl_io/nodegroup-name" : "workers",
+                "eks_amazonaws_com/sourceLaunchTemplateVersion" : "1",
+                "node_kubernetes_io/instance-type" : "m7i-flex.large",
+                "topology_kubernetes_io/region" : "ap-southeast-2"
+              },
+              "hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+              "name" : "ip-192-168-6-109.ap-southeast-2.compute.internal"
+            },
+            "pod" : {
+              "uid" : "c0593212-528d-48e0-ba91-167219f3f840",
+              "ip" : "192.168.29.226",
+              "name" : "log-demo-5d4ddfd668-r22sw"
+            },
+            "namespace" : "default",
+            "namespace_uid" : "11938df8-9492-4057-8ac9-91ad978c34d8"
+          },
+          "log" : {
+            "offset" : 28596,
+            "file" : {
+              "inode" : "17012605",
+              "path" : "/var/log/containers/log-demo-5d4ddfd668-r22sw_default_busybox-5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa.log",
+              "device_id" : "66305"
+            }
+          },
+          "message" : "{\"level\":\"info\",\"msg\":\"order placed\",\"order_id\":309}",
+          "input" : {
+            "type" : "filestream"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "filebeat-beat-filebeat-xvv2b"
+          },
+          "agent" : {
+            "name" : "filebeat-beat-filebeat-xvv2b",
+            "type" : "filebeat",
+            "version" : "9.5.0",
+            "ephemeral_id" : "5b198e31-e838-4d5a-be5c-841440310a73",
+            "id" : "9141cb03-ef58-4848-8da7-fc7f318d8e27"
+          }
+        },
+        "sort" : [
+          1795345504133
+        ]
+      },
+      {
+        "_index" : ".ds-filebeat-9.5.0-2026.11.22-000001",
+        "_id" : "t7vuAqIBF8sCHOxqfjIz",
+        "_score" : null,
+        "_source" : {
+          "@timestamp" : "2026-11-22T11:05:02.132Z",
+          "input" : {
+            "type" : "filestream"
+          },
+          "agent" : {
+            "version" : "9.5.0",
+            "ephemeral_id" : "5b198e31-e838-4d5a-be5c-841440310a73",
+            "id" : "9141cb03-ef58-4848-8da7-fc7f318d8e27",
+            "name" : "filebeat-beat-filebeat-xvv2b",
+            "type" : "filebeat"
+          },
+          "log" : {
+            "offset" : 28504,
+            "file" : {
+              "path" : "/var/log/containers/log-demo-5d4ddfd668-r22sw_default_busybox-5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa.log",
+              "device_id" : "66305",
+              "inode" : "17012605"
+            }
+          },
+          "stream" : "stdout",
+          "message" : "{\"level\":\"info\",\"msg\":\"order placed\",\"order_id\":308}",
+          "host" : {
+            "name" : "filebeat-beat-filebeat-xvv2b"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "container" : {
+            "runtime" : "containerd",
+            "image" : {
+              "name" : "docker.io/library/busybox:latest"
+            },
+            "id" : "5597218ada694298765bbe5e2b4f423c4314c27dedd4973c3e2c32b964d017fa"
+          },
+          "kubernetes" : {
+            "container" : {
+              "name" : "busybox"
+            },
+            "node" : {
+              "name" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+              "uid" : "0c474847-110a-4023-9663-188baac9f1a3",
+              "labels" : {
+                "eks_amazonaws_com/nodegroup-image" : "ami-0179eedff3fa8edad",
+                "kubernetes_io/hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal",
+                "alpha_eksctl_io/nodegroup-name" : "workers",
+                "eks_amazonaws_com/sourceLaunchTemplateId" : "lt-08a432e70125087ac",
+                "kubernetes_io/arch" : "amd64",
+                "beta_kubernetes_io/os" : "linux",
+                "beta_kubernetes_io/arch" : "amd64",
+                "eks_amazonaws_com/nodegroup" : "workers",
+                "beta_kubernetes_io/instance-type" : "m7i-flex.large",
+                "node_kubernetes_io/instance-type" : "m7i-flex.large",
+                "topology_kubernetes_io/zone" : "ap-southeast-2a",
+                "topology_kubernetes_io/region" : "ap-southeast-2",
+                "kubernetes_io/os" : "linux",
+                "k8s_io/cloud-provider-aws" : "e54503c795a181127c6ebc8e9732dc5c",
+                "alpha_eksctl_io/cluster-name" : "elk-lab",
+                "failure-domain_beta_kubernetes_io/zone" : "ap-southeast-2a",
+                "failure-domain_beta_kubernetes_io/region" : "ap-southeast-2",
+                "topology_ebs_csi_aws_com/zone" : "ap-southeast-2a",
+                "eks_amazonaws_com/sourceLaunchTemplateVersion" : "1",
+                "eks_amazonaws_com/capacityType" : "ON_DEMAND",
+                "topology_k8s_aws/zone-id" : "apse2-az1"
+              },
+              "hostname" : "ip-192-168-6-109.ap-southeast-2.compute.internal"
+            },
+            "pod" : {
+              "name" : "log-demo-5d4ddfd668-r22sw",
+              "uid" : "c0593212-528d-48e0-ba91-167219f3f840",
+              "ip" : "192.168.29.226"
+            },
+            "namespace" : "default",
+            "namespace_uid" : "11938df8-9492-4057-8ac9-91ad978c34d8",
+            "namespace_labels" : {
+              "kubernetes_io/metadata_name" : "default"
+            },
+            "replicaset" : {
+              "name" : "log-demo-5d4ddfd668"
+            },
+            "labels" : {
+              "pod-template-hash" : "5d4ddfd668",
+              "topology_kubernetes_io/region" : "ap-southeast-2",
+              "topology_kubernetes_io/zone" : "ap-southeast-2a",
+              "app" : "log-demo"
+            }
+          }
+        },
+        "sort" : [
+          1795345502132
+        ]
+      }
+    ]
+  }
+}
